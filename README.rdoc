@@ -1,28 +1,11 @@
-== README
+Docker Compose
+===================
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;假使我今天有三個服務要上線，這三個服務分別使用了不同的Server跟DB，
+但是我只有一台電腦的情況下，我勢必就需要安裝三個虛擬機來分別部署他們，但是傳統的虛擬機架設來說，他需要很多的硬體資源跟
+較為繁雜的架設程序，這一點在部署上是很令人頭痛的，但是Docker的出現大大改善了這些問題。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每一個Docker的專案，我們都可以將它視為一個容器，而這個容器是運行在Docker
+engine上的，也就是說呢，我只需要安裝Docker engine然後再把我的容器放在Docker engine上即可執行，我不需要去管底層做了哪些事情，
+我也不需要去在意一些繁瑣的設定，我只要照著Docker的rule去安裝我想要的東西像是DB , Web開發框架等等的，這帶來了兩個非常大的好處，一個是我可以將整個環境打包起來帶著走，另一個則是我大幅改善了傳統厚重的虛擬機安裝程序，只要你的Server上也有Docker，那我就可以把我的環境原封不動的搬到你的Server上，而且Docker是非常輕便的，意味著我可以同時執行多個容器而不會造成嚴重的硬體效能不足。
